@@ -7,33 +7,36 @@
   <meta name="author" content="Lise-May Lisbjerg Byfuglien">
   <title>BN Farver</title>
   <link rel="stylesheet" href="/css/style.css">
-  <!-- font.abel -->
-  <!-- icon -->
   <link rel="icon" href="/img/bnfarver-logo.jpg" />
+  <!-- font.abel -->
   </head>
   <body>
     <header>
-
       <section class="header top">
-        <a href="index.html" ><img class="logo" src="/img/bnfarver-logo.jpg"></a>
-        <div>
+        <div class="icons">
 
+  
         </div>
-        <div>
-          
+        <a href="index.html" ><img class="logo" src="/img/bnfarver-logo.jpg"></a>
+
+        <div class="search_wrapper">
+
+          <input id="myInput" placeholder="Søg" title="type in a product name">
+          <input type="submit" id="searchBtn" value="Søg" onclick="searchFunction()">
+
         </div>
       </section>
-  
+       <!-- navigation -->
       <nav class="navbar">
-        <ul class="nav-menu">
+        <ul class="nav-menu"> 
           <li class="nav-item">
             <div class="dropdown">
-              <button class="dropbtn">Maling</button>
-              <div class="dropdown-content">  
+              <button onclick="dropFunction()" class="dropbtn">Maling</button>
+              <div class="dropdown-content" id="dropdown-content">  
                 <div class="row">
                   <div class="column">
                     <b><a href="#" class="nav-link">Indendørs Maling</a></b>
-                    <a href="#">- Vægmaling</a>
+                    <a href="#">- Vægmaling</a>    
                     <a href="#">- Loftmaling</a>
                     <a href="#">- Gulv maling</a>
                     <a href="#">- Træ & Metal maling</a>
@@ -201,6 +204,78 @@
       </nav>
 
     </header>
+    <main> 
+      <!-- slider -->
+      <section class="slider">
+
+      </section>
+      <!-- category img section -->
+      <section class="img_category">
+        <div class="img_category_wrap">
+          <article class="metallic_colors" href="/#">
+            <a><img class="metallic_colors_img img_category_img" src="/img/Fredfyldt arbejdsbord.png"></a>
+            <p id="img_category_p" class="metallic_colors_p">metallic farver</p>
+          </article>
+
+          <div class="img_wrap_toBeside">
+          <article class="color_year" href="/#">
+            <a><img class="color_year_img img_category_img" src="/img/Farverigt værelse.png"></a>
+            <p id="img_category_p" class="color_year_p">årets farver</p>
+          </article>
+
+          <article class="color_trends" href="/#">
+            <a><img class="color_trends_img img_category_img" src="/img/Farverigt værelse.png"></a>
+            <p id="img_category_p" class="color_trends_p">farvetrends</p>
+          </article>
+          </div>
+
+          <article class="paint_furniture" href="/#">
+            <a><img class="paint_furniture_img img_category_img" src="/img/Blå indretning med væg og møbel.png"></a>
+            <p id="img_category_p" class="paint_furniture_p">maling af <br> møbler og interiør</p>
+          </article>
+
+          <article class="get_the_style" href="/#">
+            <a><img class="get_the_style_img img_category_img" src="/img/Grøns soveværelse.png"></a>
+            <p id="img_category_p" class="get_the_style_p">Få Stilen i dit hjem</p>
+          </article>
+
+          <article class="metallic_colors" href="/#">
+            <a><img class="metallic_colors_img img_category_img" src="/img/Fredfyldt arbejdsbord.png"></a>
+            <p id="img_category_p" class="metallic_colors_p">metallic farver</p>
+          </article>
+
+        </div>
+
+      </section>
+      <!-- Find your paint -->
+      <section>
+
+      </section>
+      <!-- Loft eller væg maling -->
+      <section>
+
+      </section>
+       <!-- Top 4 most sold products -->
+       <section>
+
+      </section>
+      <!-- Brands-->
+      <section>
+
+      </section>
+       <!-- Costumers says-->
+       <section>
+
+      </section>
+      <!-- Footer-->
+      <footer>
+
+      </footer>
+
+
+
+
+    </main>
     <script src="js/main.js"></script>
   </body>
   

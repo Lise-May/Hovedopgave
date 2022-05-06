@@ -149,7 +149,62 @@ a{
 /*---------- Forside slider --------- */
 
 /*-----*/
-/*---------- xx --------- */
+/*---------- Img collection --------- */
+
+.img_category{
+    padding: 10px 5%;
+}
+
+.img_category_img{
+    opacity: 60%;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+#img_category_p{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.color_year, .color_trends{
+    width: 48%;
+}
+
+.img_wrap_toBeside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.metallic_colors_p{
+    bottom: 98px;
+    left: 174px;
+}
+
+.color_year_p{
+    bottom: 190px;
+    left: 38px;
+}
+
+.color_trends_p{
+    bottom: 190px;
+    left: 38px;
+}
+
+.paint_furniture_p{
+    bottom: 50px;
+    left: 150px;
+}
+
+.get_the_style_p{
+    bottom: 180px;
+    left: 18px;
+}
+
 
 
 /* -------------- media query tablet --------------- */
