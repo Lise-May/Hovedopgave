@@ -3,6 +3,8 @@ $primary_black: #000000;
 $primary_white: #ffffff;
 $primary_gray: #F3F3F3;  
 $primary_green: #178841;
+
+$sekendary_gray: #CBCBCB;
 /*-----*/
 /*---------- fonts ----------*/
 
@@ -14,6 +16,57 @@ $primary_green: #178841;
     box-sizing: border-box;
     text-decoration: none;
     
+}
+
+h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6% 0;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2% 0;
+}
+
+p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.green_btn{
+    background-color: $primary_green;
+}
+
+.gray_btn{
+    background-color: $sekendary_gray;
+}
+
+.rounded_btn{
+    border-radius: 5px;
+}
+
+.white_text{
+    color: $primary_white;
+}
+
+.border_top{
+    border-top: 1px solid $primary_black;
+}
+
+.border_bottom{
+    border-bottom: 1px solid $primary_black;
 }
 
 /*-----*/
@@ -145,6 +198,33 @@ a{
 /*-----*/
 /*---------- Footer --------- */
 
+.footer_space{
+    padding: 10% 0;
+}
+
+.footer_info{
+    text-align: center;
+}
+
+.some_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30%;
+}
+
+.fb_logo, .insta_logo, .yt_logo{
+    width: 45%;
+}
+
+.emerke{
+    padding-top: 10%;
+}
+
+.e_merket_logo{
+    width: 30%;
+}
+
+
 /*-----*/
 /*---------- Forside slider --------- */
 
@@ -204,6 +284,61 @@ a{
     bottom: 180px;
     left: 18px;
 }
+
+/*-----*/
+/*---------- Find your paint --------- */
+
+.find_paint{
+    background-color: $primary_gray;
+}
+
+.find_paint_wrap {
+    padding: 10px 5%;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* 
+.find_paint_text_site {
+   grid-area: 1 / 1 / 2 / 3; 
+}*/
+  
+.find_paint_img_site { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+  
+
+.find_paint_p{
+   font-weight:600;
+   text-align: center;
+}
+
+.find_paint_btn{
+    text-align: center;
+    padding: 5px 0px;
+    margin: 15px 20%;
+}
+
+.color_code_img{
+    width: 100%;
+}
+
+/*-----*/
+/*---------- Loft eller væg maling --------- */
+
+/*-----*/
+/*---------- Top 4 most sold products  --------- */
+
+/*-----*/
+/*---------- Brands --------- */
+
+/*-----*/
+/*---------- Costumers says --------- */
 
 
 
