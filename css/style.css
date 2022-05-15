@@ -126,13 +126,15 @@ a {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 70px;
+  top: 105px;
+  /*70px*/
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
-  width: 100%;
+  width: 30%;
+  /*100%*/
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -153,6 +155,7 @@ a {
 
 .dropdown .dropbtn {
   font-size: 16px;
+  font-weight: bold;
   color: #000000;
   border: none;
   outline: none;
@@ -274,7 +277,8 @@ a {
 
 .metallic_colors_p {
   bottom: 98px;
-  left: 174px;
+  left: 0px;
+  /*174px*/
 }
 
 .color_year_p {
@@ -284,12 +288,14 @@ a {
 
 .color_trends_p {
   bottom: 190px;
-  left: 38px;
+  left: 0px;
+  /*38*/
 }
 
 .paint_furniture_p {
   bottom: 50px;
-  left: 150px;
+  left: 0px;
+  /*150px*/
 }
 
 .get_the_style_p {
@@ -346,15 +352,83 @@ a {
 
 /*-----*/
 /*---------- Loft eller væg maling --------- */
+.cealing_wall_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5%;
+  overflow: hidden;
+}
+
 /*-----*/
 /*---------- Top 4 most sold products  --------- */
 /*-----*/
 /*---------- Brands --------- */
+.brands_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 5%;
+}
+
+.dyrup_logo, .gori_logo, .hempel_logo {
+  width: 100%;
+}
+
 /*-----*/
 /*---------- Costumers says --------- */
 /* -------------- media query tablet --------------- */
+@media screen and (max-width: 950px) and (min-width: 672px) {
+  /*Navigation*/
+  .nav-menu {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #ffffff;
+  }
+  .dropdown .dropbtn {
+    font-size: 18px;
+    color: #000000;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+  }
+  /*Category img section*/
+  .img_category {
+    overflow: hidden;
+  }
+  .metallic_colors {
+    float: right;
+    width: 45%;
+    padding-left: 5%;
+  }
+  .img_wrap_toBeside {
+    width: 55%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .paint_furniture {
+    width: 55%;
+  }
+  .get_the_style {
+    float: right;
+    width: 45%;
+    padding-left: 5%;
+  }
+}
+
 /* ------- media query (ipad pro +) laptop --------- */
 @media screen and (min-width: 950px) {
+  /*header / navigation*/
   .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -371,6 +445,15 @@ a {
             align-items: center;
     gap: 60px;
     position: inherit;
+    top: 70px;
+    width: 100%;
+  }
+  .dropdown .dropbtn {
+    font-size: 25px;
+  }
+  .dropdown:hover .dropdown-content {
+    font-size: 22px;
+    padding-left: 5%;
   }
   .navbar {
     -webkit-box-orient: horizontal;
@@ -393,5 +476,6 @@ a {
   .column {
     width: 25%;
   }
+  /*Category img section*/
 }
 /*# sourceMappingURL=style.css.map */
