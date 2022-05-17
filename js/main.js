@@ -15,5 +15,16 @@ document.querySelectorAll(".nav-link").forEach(n => n. //add en eventlistener
         navMenu.classList.remove("active");
 })) 
 
-
+//Top 4 mest solgte produkter
+function top_sold_product_btn() {
+    var x = document.getElementById("myDIV");
+    var y = document.getElementById("myDIV2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "block";
+    }
+}
   
