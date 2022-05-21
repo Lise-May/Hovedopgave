@@ -538,6 +538,10 @@ main {
         padding: 5% 0 3%;
     }
 
+    main {
+        padding-top: 15%;
+    }
+
     /*Navigation*/
 
     .nav-menu {
@@ -639,16 +643,52 @@ main {
         grid-auto-flow: row;
         width: 100%;
         height: 100%;
-      }
+    }
       
-      .costumer_says_text {
-          grid-area: 1 / 1 / 2 / 3;
-        }
+    .costumer_says_text {
+        grid-area: 1 / 0 / 2 / 3;
+        padding-top: 20%;
+    }
       
-      .costumer_says_slider {
-          grid-area: 1 / 2 / 2 / 3;
-        }
-      
+    .costumer_says_slider {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .trustpilot_logo{
+        padding: 5% 2% 2%;
+        width: 36%;
+    }
+
+    .next {
+        right: -12%;
+    }
+
+    .prev {
+        left: -12%;
+    }
+
+    /*Footer*/
+    .footer_tab {
+        display: flex;
+    }
+
+    .footer_tablet{
+        width: 50%;
+    }
+
+    .footer_space {
+        padding: 0 0 10%;
+    }
+
+    .some_wrap{
+        padding-top: 5%;
+    }
+
+    .news_wrap{
+        padding: 5% 0;
+    }
+
+    
   
 
 }

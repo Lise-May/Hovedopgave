@@ -577,6 +577,9 @@ main {
   h2 {
     padding: 5% 0 3%;
   }
+  main {
+    padding-top: 15%;
+  }
   /*Navigation*/
   .nav-menu {
     width: 55%;
@@ -669,9 +672,8 @@ main {
   .costumer_says_text {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 0 / 2 / 3;
+    padding-top: 20%;
   }
   .costumer_says_slider {
     -ms-grid-row: 1;
@@ -679,6 +681,34 @@ main {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 1 / 2 / 2 / 3;
+  }
+  .trustpilot_logo {
+    padding: 5% 2% 2%;
+    width: 36%;
+  }
+  .next {
+    right: -12%;
+  }
+  .prev {
+    left: -12%;
+  }
+  /*Footer*/
+  .footer_tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer_tablet {
+    width: 50%;
+  }
+  .footer_space {
+    padding: 0 0 10%;
+  }
+  .some_wrap {
+    padding-top: 5%;
+  }
+  .news_wrap {
+    padding: 5% 0;
   }
 }
 
