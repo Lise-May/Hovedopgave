@@ -17,8 +17,8 @@ document.querySelectorAll(".nav-link").forEach(n => n. //add en eventlistener
 
 //Top 4 mest solgte produkter
 function top_sold_product_btn() {
-    var x = document.getElementById("myDIV");
-    var y = document.getElementById("myDIV2");
+    var x = document.getElementById("indor_product");
+    var y = document.getElementById("outdor_product");
     if (x.style.display === "none") {
       x.style.display = "block";
       y.style.display = "none";
@@ -26,5 +26,33 @@ function top_sold_product_btn() {
       x.style.display = "none";
       y.style.display = "block";
     }
+}
+
+//Slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
   
