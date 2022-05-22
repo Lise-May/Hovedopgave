@@ -714,6 +714,13 @@ main {
 
 /* ------- media query (ipad pro +) laptop --------- */
 @media screen and (min-width: 950px) {
+  /*Generel*/
+  h2 {
+    padding: 5% 0 3%;
+  }
+  main {
+    padding-top: 10%;
+  }
   /*header / navigation*/
   .nav-menu {
     display: -webkit-box;
@@ -738,7 +745,7 @@ main {
     width: 100%;
   }
   .dropdown .dropbtn {
-    font-size: 25px;
+    font-size: 17px;
   }
   .dropdown:hover .dropdown-content {
     font-size: 22px;
@@ -765,6 +772,177 @@ main {
   .column {
     width: 25%;
   }
+  /*header*/
+  .prfile_img {
+    width: 3%;
+  }
+  .Basket_img {
+    width: 4%;
+    height: 38px;
+  }
+  .search_wrapper {
+    text-align: center;
+    padding-left: 18%;
+    height: 10%;
+  }
   /*Category img section*/
+  .logo {
+    margin-bottom: -65px;
+    margin-left: 40px;
+  }
+  .img_category {
+    overflow: hidden;
+  }
+  .metallic_colors {
+    float: right;
+    width: 45%;
+    padding-left: 5%;
+  }
+  .img_wrap_toBeside {
+    width: 55%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .paint_furniture {
+    width: 55%;
+  }
+  .get_the_style {
+    float: right;
+    width: 45%;
+    padding-left: 5%;
+    margin-top: -41.5%;
+  }
+  .let_you_inspirer {
+    margin-top: -21%;
+  }
+  /* Find you paint*/
+  .find_paint {
+    padding: 4% 0;
+  }
+  .find_paint_text_site {
+    margin-top: 10%;
+  }
+  .find_paint_h2 {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .color_code_img {
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .find_paint_btn {
+    margin: 15px 20% 15px 35%;
+    width: 25%;
+  }
+  /*loft eller væg maling*/
+  .cealing_wall_wrap {
+    padding-bottom: 5%;
+  }
+  .celing_paint_img {
+    float: left;
+  }
+  .wall_paint_img {
+    float: right;
+  }
+  /*top 4 most sold products*/
+  .product_most_sold_wrap {
+    width: 25%;
+  }
+  .product_name {
+    font-size: 16px;
+  }
+  .Product_price {
+    font-size: 20px;
+  }
+  .most_sold_btn {
+    width: 45%;
+  }
+  .most_sold_btn_wrap {
+    padding: 5px 35%;
+  }
+  /* Costumers says */
+  .Costumers_says {
+    padding: 5% 0;
+  }
+  .costumer_says_trustpilot {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1frfr 1.1fr;
+        grid-template-columns: 1fr 1frfr 1.1fr;
+    /* grid-template-columns: 0.9fr 1.1fr;*/
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    width: 100%;
+    height: 100%;
+  }
+  .costumer_says_text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-area: 1 / 0 / 2 / 3;
+    padding-top: 10%;
+  }
+  .costumer_says_slider {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .costumer_says_p {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .trustpilot_logo {
+    padding: 5% 2% 2%;
+    width: 36%;
+  }
+  .next {
+    right: -12%;
+  }
+  .prev {
+    left: -12%;
+  }
+  /*Footer*/
+  .footer_tab {
+    display: contents;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 5%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer_tablet {
+    width: 50%;
+  }
+  .footer_space {
+    padding: 0 0 10%;
+  }
+  .some_wrap {
+    padding-top: 5%;
+  }
+  .news_wrap {
+    padding: 5% 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
