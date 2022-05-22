@@ -669,6 +669,12 @@ main {
     width: 100%;
     height: 100%;
   }
+  .Costumers_says {
+    padding: 5% 0;
+  }
+  h2 {
+    padding: 5% 6px 6%;
+  }
   .costumer_says_text {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
