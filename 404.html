@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Lise-May Lisbjerg Byfuglien">
+  <title>BN Farver</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/bnfarver-logo.jpg" />
+  <!-- font.abel -->
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+  </style>
+  </head>
+  <body>
+    <header class="border_bottom">
+      <section class="header_top">
+        <div class="icons">
+
+  
+        </div>
+        <a href="index.html" ><img class="logo" src="/img/bnfarver-logo.jpg"></a>
+
+        <div class="search_wrapper"> 
+          <input id="searchBar" placeholder="Søg i butikken" title="type in a product name">
+          <input type="submit" id="searchBtn" value="Søg" onclick="searchFunction()">
+            <a href="index.html" ><img class="prfile_img" src="/img/Bruger ikon.png" alt=""></a>
+            <a href="index.html" ><img class="Basket_img" src="/img/Shopping kurv v2.png" alt=""></a>
+        </div>
+        
+      
+          
+      </section>
+       <!-- navigation -->
+      <nav class="navbar">
+        <ul class="nav-menu"> 
+          <li class="nav-item">
+            <div class="dropdown">
+              <button onclick="dropFunction()" class="dropbtn">Maling</button>
+              <div class="dropdown-content" id="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Indendørs Maling</a></b>
+                    <a href="/404.html">Vægmaling</a>    
+                    <a href="/404.html">Loftmaling</a>
+                    <a href="/404.html">Gulv maling</a>
+                    <a href="/404.html">Træ & Metal maling</a>
+                  </div> 
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Udendørs Maling</a></b>
+                    <a href="/404.html">Facademaling</a>
+                    <a href="/404.html">Tagmaling</a>
+                    <a href="/404.html">Træ & Metal maling</a>
+                    <a href="/404.html">Sokkelmaling</a>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Tapet & Filt</button>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">wallcoverings</a></b>
+                    <a href="/404.html">Aurora</a>
+                    <a href="/404.html">Avington</a>
+                    <a href="/404.html">Ferm living</a>
+                  </div> 
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">tapetkompagniet</a></b>
+                    <a href="/404.html">Symetri</a>
+                    <a href="/404.html">Fototapet</a>
+                    <a href="/404.html">Prismer</a>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li>
+  
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Udstyr & Tilbehør</button>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Malerværktøj</a></b>
+                    <a href="/404.html">Pensler</a>
+                    <a href="/404.html">Malerruller</a>
+                    <a href="/404.html">Spartelværktøj</a>
+                  </div> 
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Sikkerhedsudstyr</a></b>
+                    <a href="/404.html">Masker</a>
+                    <a href="/404.html">Hansker</a>
+                    <a href="/404.html">Briller</a>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Plejeprodukter</button>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Olie, Voks & Kemi</a></b>
+                    <a href="/404.html">Borup Kemi</a>
+                    <a href="/404.html">Nordicare Møbelolier</a>
+                    <a href="/404.html">Nordicare Rensemidler</a>
+                  </div> 
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Rengøring</a></b>
+                    <a href="/404.html">Fliserens</a>
+                    <a href="/404.html">Tagrens</a>
+                    <a href="/404.html">Rengøringsmidler & Sæber</a>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Hoby & Fritid</button>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Spraymaling</a></b>
+                    <a href="/404.html">Belton</a>
+                    <a href="/404.html">Motip</a>
+                    <a href="/404.html">Spraylak</a>
+                  </div> 
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Bådmaling</a></b>
+                    <a href="/404.html">Bundmaling</a>
+                    <a href="/404.html">Lakker</a>
+                    <a href="/404.html">Bådpleje</a>
+                  </div> 
+                  <div class="column">
+                    <b><a href="/404.html" class="nav-link">Autolak & Industrilak</a></b>
+                    <a href="/404.html">Autolak</a>
+                    <a href="/404.html">Q-Refinish</a>
+                    <a href="/404.html">Tilbehør</a>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Om os</button>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column">
+                    <a href="/404.html">Åbningstider</a>
+                    <a href="/404.html">Kontakt</a>
+                    <a href="/404.html">Om Os</a>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li>
+
+            
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+      </nav>
+
+    </header>
+    <main class="main_error">
+        <section class="error">
+            <div class="error_wrap">
+                <h1>Ups...! noget gik galt, gå tilbage til forsiden</h1>
+                <a href="/index.html"><p class="error_btn white_text green_btn rounded_btn">Tilbage til forsiden</p></a>
+            </div>
+        </section>
+
+
+
+
+
+
+       <!-- Footer-->
+       
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+  
+</html>

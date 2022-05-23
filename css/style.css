@@ -305,7 +305,7 @@ a {
 }
 
 .fb_logo, .insta_logo, .yt_logo {
-  width: 45%;
+  width: 60%;
 }
 
 .emerke {
@@ -343,9 +343,30 @@ a {
   margin-left: -3.93px;
 }
 
+/*Footer gray*/
+.footer_gray {
+  background-color: #F3F3F3;
+  padding-top: 5%;
+}
+
+.footer_gray_info {
+  text-align: center;
+}
+
+.footer_gray_p {
+  padding: 3% 0;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
 /*-----*/
 /*---------- Forside cover--------- */
-main {
+.main_front {
   padding-top: 18%;
 }
 
@@ -580,13 +601,39 @@ main {
   border-radius: 3px 0 0 3px;
 }
 
+/*-----*/
+/*---------- 404 --------- */
+.error {
+  background-color: #F3F3F3;
+}
+
+.error_wrap {
+  text-align: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.error_btn {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  padding: 4px;
+}
+
 /* -------------- media query tablet / ipad mini --------------- */
-@media screen and (max-width: 819px) and (min-width: 672px) {
+@media screen and (min-width: 672px) and (max-width: 810px) {
   /*Generel*/
   h2 {
+    font-size: 26px;
     padding: 5% 0 3%;
   }
-  main {
+  p {
+    font-size: 16px;
+  }
+  .main_front {
     padding-top: 8%;
   }
   /*Navigation*/
@@ -681,6 +728,11 @@ main {
   .Costumers_says {
     padding: 5% 0;
   }
+  .costumer_says_p {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   h2 {
     padding: 5% 6px 6%;
   }
@@ -725,6 +777,20 @@ main {
   .news_wrap {
     padding: 5% 0;
   }
+  /*Footer gray*/
+  .footer_gray {
+    background-color: #F3F3F3;
+  }
+  .footer_gray_info {
+    text-align: center;
+  }
+  .footer_gray_p {
+    padding: 2% 0;
+  }
+  /*404*/
+  .error_btn {
+    max-width: 50%;
+  }
 }
 
 /* ------- media query (ipad pro +) laptop --------- */
@@ -733,8 +799,8 @@ main {
   h2 {
     padding: 5% 0 3%;
   }
-  main {
-    padding-top: 2%;
+  .main_front {
+    padding-top: 3%;
   }
   /*header / navigation*/
   .nav-menu {
@@ -758,6 +824,11 @@ main {
   }
   .navbar {
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-top: 1px solid #252525;
   }
   .dropdown .dropbtn {
     font-size: 17px;
@@ -765,12 +836,6 @@ main {
   .dropdown:hover .dropdown-content {
     font-size: 16px;
     padding-left: 5%;
-  }
-  .navbar {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .nav-link {
     /*Hover effect*/
@@ -788,6 +853,9 @@ main {
     width: 25%;
   }
   /*header*/
+  .header_top {
+    padding-bottom: 2%;
+  }
   .prfile_img {
     width: 3%;
   }
@@ -958,6 +1026,37 @@ main {
   }
   .news_wrap {
     padding: 5% 0;
+  }
+  /*Footer gray*/
+  .footer_gray {
+    padding-top: 0;
+  }
+  .footer_gray_info {
+    text-align: left;
+    display: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer_gray_p {
+    padding: 3% 0;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  /*404*/
+  .error_wrap {
+    padding-top: 32%;
+    padding-bottom: 35%;
+  }
+  .error_btn {
+    max-width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
