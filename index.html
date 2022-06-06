@@ -16,17 +16,30 @@
   <body>
     <header class="border_bottom">
       <section class="header_top">
-        <div class="icons">
+        <div class="top_icon_wrap">
+          <div class="top_icon">
+            <a href="/404.html" ><img class="img_contact top_icon_img" src="/img/besked.png"></a>
+            <p class="top_icon_p">Har du spørgsmål? <br>Kontakt os her</p>
+          </div>
 
-  
+          <div class="top_icon">
+            <a href="/404.html" ><img class="img_contact top_icon_img" src="/img/ur.png"></a>
+            <p class="top_icon_p">1-3 dags levering <br>Bestil inden kl. 15.00</p>
+          </div>
+
+          <div class="top_icon">
+            <a href="/404.html" ><img class="img_contact top_icon_img" src="/img/fragt.png"></a>
+            <p class="top_icon_p">Billig fragt <br>Fra kun 49 kr.-</p>
+          </div>
+
         </div>
         <a href="index.html" ><img class="logo" src="/img/bnfarver-logo.jpg"></a>
 
         <div class="search_wrapper"> 
           <input id="searchBar" placeholder="Søg i butikken" title="type in a product name">
           <input type="submit" id="searchBtn" value="Søg" onclick="searchFunction()">
-            <a href="index.html" ><img class="prfile_img" src="/img/Bruger ikon.png" alt=""></a>
-            <a href="index.html" ><img class="Basket_img" src="/img/Shopping kurv v2.png" alt=""></a>
+            <a href="/404.html" ><img class="prfile_img" src="/img/Bruger ikon.png" alt=""></a>
+            <a href="/404.html" ><img class="Basket_img" src="/img/Shopping kurv v2.png" alt=""></a>
         </div>
         
       
@@ -37,7 +50,7 @@
         <ul class="nav-menu"> 
           <li class="nav-item">
             <div class="dropdown">
-              <button onclick="dropFunction()" class="dropbtn">Maling</button>
+              <button class="dropbtn">Maling</button>
               <div class="dropdown-content" id="dropdown-content">  
                 <div class="row">
                   <div class="column">
@@ -71,7 +84,7 @@
                     <a href="/404.html">Ferm living</a>
                   </div> 
                   <div class="column">
-                    <b><a href="/404.html" class="nav-link">tapetkompagniet</a></b>
+                    <b><a href="/404.html" class="nav-link">Tapetkompagniet</a></b>
                     <a href="/404.html">Symetri</a>
                     <a href="/404.html">Fototapet</a>
                     <a href="/404.html">Prismer</a>
@@ -179,11 +192,16 @@
       </nav>
 
     </header>
+
     <main class="main_front"> 
+
       <!-- Cover img-->
       <section class="cover">
         <img class="cover_img" src="/img/Cover img.png">
       </section>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
       <!-- category img section -->
       <section class="img_category">
         <div class="img_category_wrap">
@@ -239,12 +257,12 @@
 
       </section>
 
-       <!-- Top 4 most sold products -->
+       <!-- Top most sold products -->
        <section class="most_sold">
          <h2 class="most_sold_h2">mest solgte produkter</h2>
         <div class="most_sold_btn_wrap">
-          <button class="most_sold_btn white_text rounded_btn green_btn" onclick="top_sold_product_btn()">Indendørs</button>
-          <button class="most_sold_btn white_text rounded_btn gray_btn" onclick="top_sold_product_btn()">Udendørs</button>
+          <button class="most_sold_btn most_sold_btn_indor  white_text rounded_btn gray_btn active_btn" onclick="top_sold_product_btn()">Indendørs</button>
+          <button class="most_sold_btn most_sold_btn_outdor white_text rounded_btn gray_btn" onclick="top_sold_product_btn()">Udendørs</button>
         </div>
 
         <div id="indor_product">
@@ -282,9 +300,8 @@
             <p class="Product_price">89 kr.</p>
           </div>
         </div>
-        
-
       </section>
+      
       <!-- Brands-->
 
       <section class="brands">

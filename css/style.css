@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /*---------- Sass Variabler ----------*/
 /*-----*/
-/*---------- fonts ----------*/
-/*-----*/
 /*---------- general --------- */
 * {
   padding: 0;
@@ -53,12 +51,16 @@ p {
   padding: 5px;
 }
 
-.green_btn {
+.gray_btn {
+  background-color: #CBCBCB;
+}
+
+.active_btn {
   background-color: #178841;
 }
 
-.gray_btn {
-  background-color: #CBCBCB;
+.green_btn {
+  background-color: #178841;
 }
 
 .rounded_btn {
@@ -220,7 +222,7 @@ a {
 }
 
 .nav-item {
-  margin: 16px 0;
+  margin: 12px 0;
 }
 
 .nav-menu.active {
@@ -256,7 +258,7 @@ a {
   background-color: #ffffff;
 }
 
-.dropdown:hover .dropdown-content {
+.show_drop_menu {
   display: block;
 }
 
@@ -362,6 +364,28 @@ a {
   font-size: 12px;
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+/*-----*/
+/*---------- Til top--------- */
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 200px;
+  right: 7px;
+  border-radius: 50%;
+  background-color: #252525;
+  color: #ffffff;
+  height: 3%;
+  width: 7%;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+/*-----*/
+/*---------- Forside top icons--------- */
+.top_icon_wrap {
+  display: none;
 }
 
 /*-----*/
@@ -484,7 +508,7 @@ a {
 }
 
 /*-----*/
-/*---------- Top 4 most sold products  --------- */
+/*---------- most sold products  --------- */
 .most_sold {
   background-color: #F3F3F3;
 }
@@ -522,7 +546,6 @@ a {
 }
 
 .product_most_sold_wrap {
-  /*float: left;*/
   width: 30%;
   padding: 3.33%;
   border: 1px solid #252525;
@@ -654,7 +677,13 @@ a {
     background-color: inherit;
     margin: 0;
   }
+  .column {
+    width: 50%;
+  }
   /*header*/
+  .top_icon_wrap {
+    display: none;
+  }
   .prfile_img {
     width: 5%;
   }
@@ -662,6 +691,13 @@ a {
     width: 7%;
     height: 35px;
     margin-top: 3px;
+  }
+  /* Til top */
+  #myBtn {
+    height: 4%;
+    width: 6%;
+    padding-top: 6px;
+    font-size: 30px;
   }
   /*Category img section*/
   .img_category {
@@ -852,6 +888,28 @@ a {
   .column {
     width: 25%;
   }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*Top heder icons*/
+  .top_icon_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 2%;
+  }
+  .top_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+  }
+  .top_icon_img {
+    padding-right: 16px;
+  }
   /*header*/
   .header_top {
     padding-bottom: 2%;
@@ -867,6 +925,18 @@ a {
     text-align: center;
     padding-left: 18%;
     height: 10%;
+  }
+  /* Til top */
+  #myBtn {
+    max-height: 3%;
+    max-width: 3%;
+    padding-top: 6px;
+    font-size: 30px;
+    bottom: 170px;
+  }
+  /*Cover img*/
+  .cover_img {
+    padding-top: 6%;
   }
   /*Category img section*/
   .logo {
@@ -1052,8 +1122,8 @@ a {
   }
   /*404*/
   .error_wrap {
-    padding-top: 32%;
-    padding-bottom: 35%;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
   .error_btn {
     max-width: 30%;

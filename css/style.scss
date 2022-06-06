@@ -57,12 +57,16 @@ p{
     padding: 5px;
 }
 
-.green_btn{
+.gray_btn{
+    background-color: $sekendary_gray;
+}
+
+.active_btn{
     background-color: $primary_green;
 }
 
-.gray_btn{
-    background-color: $sekendary_gray;
+.green_btn{
+    background-color: $primary_green;
 }
 
 .rounded_btn{
@@ -205,7 +209,7 @@ a{
 }
 
 .nav-item{
-    margin: 16px 0;
+    margin: 12px 0;
 }
 
 .nav-menu.active{
@@ -242,7 +246,7 @@ a{
     background-color: $primary_white;
 }
 
-.dropdown:hover .dropdown-content {
+.show_drop_menu{
     display: block;
 }
 
@@ -344,6 +348,30 @@ a{
     font-size: 12px;
     padding-top: 20px;
     padding-bottom: 15px;
+}
+
+/*-----*/
+/*---------- Til top--------- */
+
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 200px;
+    right: 7px;
+    border-radius: 50%;
+    background-color: $primary_black;
+    color: $primary_white;
+    height: 3%;
+    width: 7%;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+/*-----*/
+/*---------- Forside top icons--------- */
+
+.top_icon_wrap{
+    display: none;
 }
 
 
@@ -455,7 +483,7 @@ a{
     border: 1px solid $primary_black;
 }
 /*-----*/
-/*---------- Top 4 most sold products  --------- */
+/*---------- most sold products  --------- */
 .most_sold{
     background-color: $primary_gray;
 }
@@ -485,7 +513,6 @@ a{
 }
 
 .product_most_sold_wrap{
-    /*float: left;*/
     width: 30%;
     padding: 3.33%;
     border: 1px solid $primary_black;
@@ -618,7 +645,15 @@ a{
         margin: 0;
     }
 
+    .column {
+        width: 50%;
+    }
+
     /*header*/
+    .top_icon_wrap{
+        display: none;
+    }
+
     .prfile_img {
         width: 5%;
     }
@@ -627,6 +662,14 @@ a{
         width: 7%;
         height: 35px;
         margin-top: 3px;
+    }
+
+    /* Til top */
+    #myBtn {
+        height: 4%;
+        width: 6%;
+        padding-top: 6px;
+        font-size: 30px;
     }
 
 
@@ -844,6 +887,26 @@ a{
         width: 25%;
     }
 
+    .dropdown:hover .dropdown-content {
+        display: block;
+    } 
+
+    /*Top heder icons*/
+    .top_icon_wrap{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2%;
+    }
+
+    .top_icon{
+        display: flex;
+        width: 20%;
+    }
+
+    .top_icon_img{
+        padding-right: 16px;
+    }
+
     /*header*/
 
     .header_top {
@@ -864,6 +927,21 @@ a{
         text-align: center;
         padding-left: 18%;
         height: 10%;
+    }
+
+    /* Til top */
+    #myBtn {
+        max-height: 3%;
+        max-width: 3%;
+        padding-top: 6px;
+        font-size: 30px;
+        bottom: 170px
+    }
+
+    /*Cover img*/
+
+    .cover_img{
+        padding-top: 6%;
     }
 
 
@@ -1075,8 +1153,8 @@ a{
     /*404*/
 
     .error_wrap{
-        padding-top: 32%;
-        padding-bottom: 35%;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 
     .error_btn{
